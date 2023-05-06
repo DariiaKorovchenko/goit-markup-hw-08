@@ -1,0 +1,52 @@
+.features {
+  padding: 60px 0;
+}
+
+.features-list {
+  @media (min-width: 768px) {
+    display: flex;
+  }
+}
+
+// .features-card:not(:last-child) {
+//   margin-right: 30px;
+// }
+
+.features-card {
+  margin-bottom: 30px;
+}
+
+.features-card__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f5f4fa;
+  margin-bottom: 30px;
+  height: 120px;
+}
+
+.features-card__icon {
+  display: block;
+  width: 70px;
+  height: 70px;
+}
+
+.features-title {
+  text-align: center;
+  margin: 0 0 10px 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+}
+
+.features-description {
+  margin-top: 0;
+  margin-bottom: 0;
+
+  color: $title-text-color;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
