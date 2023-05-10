@@ -58,4 +58,10 @@ img {
   text-align: center;
   line-height: 1.16;
   letter-spacing: 0.03em;
+
+  @media (min-width: 1200px) {
+    margin-bottom: 50px;
+
+    font-size: 36px;
+  }
 }

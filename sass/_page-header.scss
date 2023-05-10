@@ -10,18 +10,23 @@
 .header-navigation {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 
   @media (max-width: 767px) {
     display: none;
   }
-}
 
-.header-navigation {
-  margin-left: 93px;
+  @media (min-width: 1200px) {
+    justify-content: flex-start;
+  }
 }
 
 .header-navigation__list {
   display: flex;
+
+  @media (min-width: 1200px) {
+    margin-left: 93px;
+  }
 }
 
 .header-navigation__item:not(:last-child) {
@@ -38,7 +43,6 @@
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
-  line-height: 1.17;
   letter-spacing: 0.02em;
   text-decoration: none;
 
@@ -55,7 +59,7 @@
 .header-navigation__list .active {
   color: $accent-color;
 
-  & .active::after {
+  &.active::after {
     content: "";
     position: absolute;
     bottom: 0;

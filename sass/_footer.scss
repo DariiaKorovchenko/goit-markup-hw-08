@@ -2,17 +2,35 @@
   background-color: $alt-bg-color;
   padding: 60px 0;
   text-align: center;
+
+  @media (min-width: 1200px) {
+    text-align: left;
+  }
 }
 
-// .footer-navigation {
-//   display: flex;
-//   align-items: baseline;
-//   justify-content: space-between;
-// }
+.footer-navigation {
+  @media (min-width: 768px) {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
 
-// .footer-navigation__address {
-//   margin-right: 70px;
-// }
+  @media (min-width: 1200px) {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+}
+
+.footer-navigation__address {
+  @media (min-width: 768px) {
+    margin-right: 165px;
+  }
+
+  @media (min-width: 1200px) {
+    margin-right: 70px;
+  }
+}
 
 .footer-navigation--logo {
   color: $alternative-color;
@@ -25,6 +43,10 @@
   line-height: 1.71;
   letter-spacing: 0.03em;
   margin-top: 20px;
+
+  @media (min-width: 1200px) {
+    margin-top: 28px;
+  }
 }
 
 .footer-navigation__link {
@@ -33,7 +55,6 @@
   color: $footer-link-color;
   font-style: normal;
   font-size: 14px;
-  // line-height: 1.71;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-decoration: none;
@@ -50,6 +71,10 @@
 
 .footer-networks {
   margin-top: 60px;
+
+  @media (min-width: 1200px) {
+    margin-top: 0;
+  }
 }
 
 .footer-networks__title,
@@ -100,7 +125,10 @@
 .footer-sign {
   margin-top: 60px;
 
-  // margin-left: 93px;
+  @media (min-width: 1200px) {
+    margin-left: 93px;
+    margin-top: 0;
+  }
 }
 
 // .footer-sign__container {

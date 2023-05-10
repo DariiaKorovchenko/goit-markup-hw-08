@@ -1,12 +1,16 @@
 .portfolio-navigation {
   display: flex;
   flex-wrap: wrap;
-  // justify-content: center;
-  // margin-bottom: 50px;
+
+  margin-bottom: 50px;
   margin-bottom: 40px;
 
   &__item:not(:last-child) {
     margin-right: 8px;
+  }
+
+  @media (min-width: 768px) {
+    justify-content: center;
   }
 }
 

@@ -32,15 +32,15 @@
             data-menu-button
           >
             <svg width="40" height="40" aria-label="Мобільне меню">
-              <use href="./images/sprite.svg#menu" class="open-icon"></use>
               <use
                 href="./images/sprite.svg#cross-menu"
-                class="close-icon"
+                class="open-icon"
               ></use>
+              <use href="./images/sprite.svg#menu" class="close-icon"></use>
             </svg>
           </button>
 
-          <div class="mobile-menu__container is-open" data-menu>
+          <div class="mobile-menu__container" data-menu>
             <ul class="mobile-header-navigation__list list">
               <li class="mobile-header-navigation__item">
                 <a href="./index.html" class="mobile-header-navigation__link"
@@ -101,6 +101,9 @@
         </nav>
 
         <nav class="header-navigation">
+          <a href="./index.html" class="logo"
+            ><span class="accent-logo">Web</span>Studio</a
+          >
           <ul class="header-navigation__list list">
             <li class="header-navigation__item">
               <a href="./index.html" class="header-navigation__link">Студія</a>
@@ -114,24 +117,25 @@
               <a href="" class="header-navigation__link">Контакти</a>
             </li>
           </ul>
+
+          <ul class="header-contacts list">
+            <li class="header-contacts__item">
+              <a href="mailto:info@devstudio.com" class="header-contacts__link">
+                <svg class="header-contacts__icon" width="16" height="12">
+                  <use href="./images/sprite.svg#envelope"></use>
+                </svg>
+                info@devstudio.com</a
+              >
+            </li>
+            <li class="header-contacts__item">
+              <a href="tel:+380961111111" class="header-contacts__link">
+                <svg class="header-contacts__icon" width="10" height="16">
+                  <use href="./images/sprite.svg#phone"></use></svg
+                >+38 096 111 11 11</a
+              >
+            </li>
+          </ul>
         </nav>
-        <ul class="header-contacts list">
-          <li class="header-contacts__item">
-            <a href="mailto:info@devstudio.com" class="header-contacts__link">
-              <svg class="header-contacts__icon" width="16" height="12">
-                <use href="./images/sprite.svg#envelope"></use>
-              </svg>
-              info@devstudio.com</a
-            >
-          </li>
-          <li class="header-contacts__item">
-            <a href="tel:+380961111111" class="header-contacts__link">
-              <svg class="header-contacts__icon" width="10" height="16">
-                <use href="./images/sprite.svg#phone"></use></svg
-              >+38 096 111 11 11</a
-            >
-          </li>
-        </ul>
       </div>
     </header>
 
@@ -180,7 +184,6 @@
                     ./images/portfolio-1__x2.jpg
                   "
                   alt="Технокряк"
-                  width="450"
                 />
                 <div class="portfolio-card__overlay">
                   <p class="portfolio_card__text">
@@ -207,7 +210,6 @@
                     ./images/portfolio-2__x2.jpg
                   "
                   alt="Постер New Orlean vs Golden Star"
-                  width="450"
                 />
                 <div class="portfolio-card__overlay">
                   <p class="portfolio_card__text">
@@ -236,7 +238,6 @@
                     ./images/portfolio-3__x2.jpg
                   "
                   alt="Ресторан Seafood"
-                  width="450"
                 />
                 <div class="portfolio-card__overlay">
                   <p class="portfolio_card__text">
@@ -263,7 +264,6 @@
                     ./images/portfolio-4__x2.jpg
                   "
                   alt="Проєкт Prime"
-                  width="450"
                 />
                 <div class="portfolio-card__overlay">
                   <p class="portfolio_card__text">
@@ -290,7 +290,6 @@
                     ./images/portfolio-5__x2.jpg
                   "
                   alt="Проєкт Boxes"
-                  width="450"
                 />
                 <div class="portfolio-card__overlay">
                   <p class="portfolio_card__text">
@@ -317,7 +316,6 @@
                     ./images/portfolio-6__x2.jpg
                   "
                   alt="Inspiration has no Borders"
-                  width="450"
                 />
                 <div class="portfolio-card__overlay">
                   <p class="portfolio_card__text">
@@ -344,7 +342,6 @@
                     ./images/portfolio-7__x2.jpg
                   "
                   alt="Видання Limited Edition"
-                  width="450"
                 />
                 <div class="portfolio-card__overlay">
                   <p class="portfolio_card__text">
@@ -371,7 +368,6 @@
                     ./images/portfolio-8__x2.jpg
                   "
                   alt="Проєкт LAB"
-                  width="450"
                 />
                 <div class="portfolio-card__overlay">
                   <p class="portfolio_card__text">
@@ -398,7 +394,6 @@
                     ./images/portfolio-9__x2.jpg
                   "
                   alt="Growing Business"
-                  width="450"
                 />
                 <div class="portfolio-card__overlay">
                   <p class="portfolio_card__text">
