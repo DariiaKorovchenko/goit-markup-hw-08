@@ -4,11 +4,11 @@
   text-align: center;
 }
 
-.footer-navigation {
-  // display: flex;
-  // align-items: baseline;
-  // justify-content: space-between;
-}
+// .footer-navigation {
+//   display: flex;
+//   align-items: baseline;
+//   justify-content: space-between;
+// }
 
 // .footer-navigation__address {
 //   margin-right: 70px;
@@ -29,11 +29,12 @@
 
 .footer-navigation__link {
   display: block;
-  margin-top: 8px;
+  margin-top: 12px;
   color: $footer-link-color;
   font-style: normal;
   font-size: 14px;
-  line-height: 1.71;
+  // line-height: 1.71;
+  line-height: 1.14;
   letter-spacing: 0.03em;
   text-decoration: none;
 
