@@ -143,14 +143,13 @@ body.modal-open {
 .checkbox-label {
   position: relative;
   display: flex;
-
+  align-items: center;
   font-size: 12px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: $title-text-color;
 
   @media (min-width: 1200px) {
-    align-items: center;
     justify-content: center;
 
     font-size: 14px;
@@ -189,15 +188,9 @@ body.modal-open {
     background-color: $accent-color;
   }
 
-  @media (min-width: 768px) {
-    position: absolute;
-    top: 2px;
-    left: 0;
-  }
-
   @media (min-width: 1200px) {
     position: absolute;
-    top: 4px;
+    top: 5px;
     left: 61px;
   }
 }

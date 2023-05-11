@@ -437,6 +437,7 @@ img {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-desktop-1x.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-desktop-1x.jpg);
     min-height: 600px;
+    padding: 200px 0;
   }
 }
 @media (min-width: 1200px) and (min-device-pixel-ratio: 2), (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1200px) and (min-resolution: 192dpi), (min-width: 1200px) and (min-resolution: 2dppx) {
@@ -664,6 +665,9 @@ body.modal-open {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-size: 12px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -671,9 +675,6 @@ body.modal-open {
 }
 @media (min-width: 1200px) {
   .checkbox-label {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -714,17 +715,10 @@ body.modal-open {
   fill: #ffffff;
   background-color: #2196f3;
 }
-@media (min-width: 768px) {
-  .checkbox-label__mark {
-    position: absolute;
-    top: 2px;
-    left: 0;
-  }
-}
 @media (min-width: 1200px) {
   .checkbox-label__mark {
     position: absolute;
-    top: 4px;
+    top: 5px;
     left: 61px;
   }
 }
@@ -1491,14 +1485,15 @@ body.modal-open {
 }
 
 .portfolio-card {
-  max-width: 450px;
   margin-bottom: 30px;
 }
 @media (min-width: 768px) {
   .portfolio-card {
     width: calc((100% - 30px) / 2);
     margin-right: 30px;
-    margin-bottom: 30px;
+  }
+  .portfolio-card:first-child .portfolio-card__main {
+    height: 146px;
   }
   .portfolio-card:nth-child(2n) {
     margin-right: 0;
@@ -1511,6 +1506,14 @@ body.modal-open {
   .portfolio-card {
     width: calc((100% - 60px) / 3);
     margin-right: 30px;
+  }
+  .portfolio-card:first-child .portfolio-card__main {
+    height: 110px;
+  }
+  .portfolio-card:nth-child(2n) {
+    margin-right: 30px;
+  }
+  .portfolio-card:nth-last-child(-n+2) {
     margin-bottom: 30px;
   }
   .portfolio-card:nth-child(3n) {
@@ -1522,8 +1525,6 @@ body.modal-open {
 }
 
 .portfolio-card__link {
-  display: block;
-  max-width: 450px;
   text-decoration: none;
   -webkit-transition-property: -webkit-box-shadow;
   transition-property: -webkit-box-shadow;
@@ -1582,17 +1583,14 @@ body.modal-open {
 
 .portfolio-card__main {
   width: 100%;
-  margin-right: 0;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-right: 24px;
-  padding-left: 24px;
+  padding: 20px 24px;
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
 }
 
 .portfolio-card__name {
+  margin: 0;
   color: #212121;
   font-weight: 700;
   font-size: 18px;
@@ -1601,7 +1599,7 @@ body.modal-open {
 }
 
 .portfolio-card__descr {
-  margin-top: 4px;
+  margin: 4px 0 0 0;
   color: #757575;
   font-size: 16px;
   line-height: 1.87;
