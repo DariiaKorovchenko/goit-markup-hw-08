@@ -15,7 +15,7 @@
     display: none;
   }
 
-  .mobile-menu__button:active & {
+  .mobile-menu__button:hover & {
     fill: $accent-color;
   }
 }
@@ -27,12 +27,18 @@
     display: block;
   }
 
-  .mobile-menu__button:active & {
+  .mobile-menu__button:hover & {
     fill: $accent-color;
   }
 }
 
 // container
+
+body {
+  .mobile-menu__container.is-open body {
+    overflow: hidden;
+  }
+}
 
 .mobile-menu__container {
   display: none;
@@ -47,6 +53,7 @@
 
   &.is-open {
     display: block;
+    overflow: hidden;
   }
 
   @media (min-width: 768px) {

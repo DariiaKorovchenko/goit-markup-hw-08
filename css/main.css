@@ -46,12 +46,6 @@ body {
   overflow: hidden;
 }
 
-picture {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
 img {
   display: block;
   max-width: 100%;
@@ -101,7 +95,7 @@ img {
 .mobile-menu__button.is-open .open-icon {
   display: none;
 }
-.mobile-menu__button:active .open-icon {
+.mobile-menu__button:hover .open-icon {
   fill: #2196f3;
 }
 
@@ -111,8 +105,12 @@ img {
 .mobile-menu__button.is-open .close-icon {
   display: block;
 }
-.mobile-menu__button:active .close-icon {
+.mobile-menu__button:hover .close-icon {
   fill: #2196f3;
+}
+
+body .mobile-menu__container.is-open body {
+  overflow: hidden;
 }
 
 .mobile-menu__container {
@@ -128,6 +126,7 @@ img {
 }
 .mobile-menu__container.is-open {
   display: block;
+  overflow: hidden;
 }
 @media (min-width: 768px) {
   .mobile-menu__container {
