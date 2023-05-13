@@ -14,6 +14,10 @@
   .mobile-menu__button.is-open & {
     display: none;
   }
+
+  .mobile-menu__button:active & {
+    fill: $accent-color;
+  }
 }
 
 .close-icon {
@@ -22,6 +26,10 @@
   .mobile-menu__button.is-open & {
     display: block;
   }
+
+  .mobile-menu__button:active & {
+    fill: $accent-color;
+  }
 }
 
 // container
@@ -29,7 +37,7 @@
 .mobile-menu__container {
   display: none;
   width: 100%;
-  min-height: 796px;
+  height: 100vh;
   background-color: $alternative-color;
   position: absolute;
   top: calc(100% - 60px);
@@ -37,12 +45,8 @@
   padding: 48px 40px;
   z-index: 4;
 
-  transform: translateX(100%);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
   &.is-open {
     display: block;
-    transform: translateX(0);
   }
 
   @media (min-width: 768px) {
@@ -88,6 +92,23 @@
   &.active {
     color: $accent-color;
   }
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+
+  @media (max-width: 300px) {
+    font-size: 26px;
+  }
+
+  @media (min-width: 300px) {
+    font-size: 30px;
+  }
+
+  @media (min-width: 400px) {
+    font-size: 40px;
+  }
 }
 
 // contacts
@@ -98,6 +119,18 @@
 
   @media (min-width: 768px) {
     display: none;
+  }
+
+  @media (max-width: 299px) {
+    margin-top: 140px;
+  }
+
+  @media (min-width: 300px) {
+    margin-top: 180px;
+  }
+
+  @media (min-width: 400px) {
+    margin-top: 260px;
   }
 }
 
@@ -112,6 +145,18 @@
   letter-spacing: 0.02em;
   color: $accent-color;
   text-decoration: none;
+
+  @media (max-width: 299px) {
+    font-size: 22px;
+  }
+
+  @media (min-width: 300px) {
+    font-size: 28px;
+  }
+
+  @media (min-width: 400px) {
+    font-size: 34px;
+  }
 }
 
 .mobile-menu__email {
@@ -121,6 +166,18 @@
   letter-spacing: 0.02em;
   color: $title-text-color;
   text-decoration: none;
+
+  @media (max-width: 299px) {
+    font-size: 14px;
+  }
+
+  @media (min-width: 300px) {
+    font-size: 18px;
+  }
+
+  @media (min-width: 400px) {
+    font-size: 24px;
+  }
 }
 
 // network links
@@ -145,6 +202,18 @@
 
   &--first {
     padding-left: 0;
+  }
+
+  @media (max-width: 299px) {
+    font-size: 14px;
+  }
+
+  @media (min-width: 300px) {
+    font-size: 16px;
+  }
+
+  @media (min-width: 400px) {
+    font-size: 18px;
   }
 }
 

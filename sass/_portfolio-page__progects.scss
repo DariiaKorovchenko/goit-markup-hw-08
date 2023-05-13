@@ -74,7 +74,6 @@
 }
 
 .portfolio-card__overlay {
-  display: block;
   max-width: 450px;
   position: absolute;
   top: 0;
@@ -90,6 +89,14 @@
   .portfolio-card__link:focus & {
     transform: translateY(0);
   }
+
+  @media (min-width: 768px) {
+    padding: 49px 24px;
+  }
+
+  @media (min-width: 1200px) {
+    padding: 63px 24px;
+  }
 }
 
 .portfolio_card__text {
@@ -102,6 +109,7 @@
   line-height: 1.55;
   letter-spacing: 0.03em;
   color: $alternative-color;
+  overflow-y: scroll;
 }
 
 .portfolio-card__main {

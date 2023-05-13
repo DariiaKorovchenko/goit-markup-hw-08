@@ -277,19 +277,43 @@
           <h2 class="section-title">Чим ми займаємося</h2>
           <ul class="examples-list list">
             <li class="examples-list__item">
-              <img src="./images/example1.jpg" alt="Приклад 1" width="370" />
+              <img
+                src="./images/example-1__desktop-1x.jpg"
+                srcset="
+                  ./images/example-1__desktop-1x.jpg 1x,
+                  ./images/example-1__desktop-2x.jpg 2x
+                "
+                alt="Приклад 1"
+                width="370"
+              />
               <div class="examples-list__container">
                 <p class="examples-list__descr">Десктопні додатки</p>
               </div>
             </li>
             <li class="examples-list__item">
-              <img src="./images/example2.jpg" alt="Приклад 2" width="370" />
+              <img
+                src="./images/example-2__desktop-1x.jpg"
+                srcset="
+                  ./images/example-2__desktop-1x.jpg 1x,
+                  ./images/example-2__desktop-2x.jpg 2x
+                "
+                alt="Приклад 2"
+                width="370"
+              />
               <div class="examples-list__container">
                 <p class="examples-list__descr">Мобільні додатки</p>
               </div>
             </li>
             <li class="examples-list__item">
-              <img src="./images/example3.jpg" alt="Приклад 3" width="370" />
+              <img
+                src="./images/example-3__desktop-1x.jpg"
+                srcset="
+                  ./images/example-3__desktop-1x.jpg 1x,
+                  ./images/example-3__desktop-2x.jpg 2x
+                "
+                alt="Приклад 3"
+                width="370"
+              />
               <div class="examples-list__container">
                 <p class="examples-list__descr">Дизайнерські рішення</p>
               </div>
@@ -304,15 +328,37 @@
           <ul class="team-list list">
             <li class="team-list__item">
               <div class="team-card">
-                <img
-                  src="./images/team-member-1__x1.jpg"
-                  srcset="
-                    ./images/team-member-1__x1.jpg 1x,
-                    ./images/team-member-1__x2.jpg 2x
-                  "
-                  alt="Ігор Дем'яненко"
-                  width="450"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/team-member-1__mobile-1x.jpg 1x,
+                      ./images/team-member-1__mobile-2x.jpg 2x
+                    "
+                    media="(min-width: 200px)"
+                    type="image/jpeg"
+                  />
+                  <source
+                    srcset="
+                      ./images/team-member-1__tablet-1x.jpg 1x,
+                      ./images/team-member-1__tablet-2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                    type="image/jpeg"
+                  />
+                  <source
+                    srcset="
+                      ./images/team-member-1__desktop-1x.jpg 1x,
+                      ./images'team-member-1__desktop-2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                    type="image/jpeg"
+                  />
+
+                  <img
+                    src="./images/team-member-1__mobile-x1.jpg"
+                    alt="Ігор Дем'яненко"
+                  />
+                </picture>
                 <div class="team-card__descr">
                   <h3 class="team-card__name">Ігор Дем'яненко</h3>
                   <p class="team-card__job">Product Designer</p>
@@ -368,15 +414,36 @@
 
             <li class="team-list__item">
               <div class="team-card">
-                <img
-                  src="./images/team-member-2__x1.jpg"
-                  srcset="
-                    ./images/team-member-2__x1.jpg 1x,
-                    ./images/team-member-2__x2.jpg 2x
-                  "
-                  alt="Ольга Рєпіна"
-                  width="450"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/team-member-2__mobile-1x.jpg 1x,
+                      ./images/team-member-2__mobile-2x.jpg 2x
+                    "
+                    media="(min-width: 200px)"
+                    type="image/jpeg"
+                  />
+                  <source
+                    srcset="
+                      ./images/team-member-2__tablet-1x.jpg 1x,
+                      ./images/team-member-2__tablet-2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                    type="image/jpeg"
+                  />
+                  <source
+                    srcset="
+                      ./images/team-member-2__desktop-1x.jpg 1x,
+                      ./images/team-member-2__desktop-2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                    type="image/jpeg"
+                  />
+                  <img
+                    src="./images/team-member-2__mobile-x1.jpg"
+                    alt="Ольга Рєпіна"
+                  />
+                </picture>
                 <div class="team-card__descr">
                   <h3 class="team-card__name">Ольга Рєпіна</h3>
                   <p class="team-card__job">Frontend Developer</p>
@@ -432,15 +499,36 @@
 
             <li class="team-list__item">
               <div class="team-card">
-                <img
-                  src="./images/team-member-3__x1.jpg"
-                  srcset="
-                    ./images/team-member-3__x1.jpg 1x,
-                    ./images/team-member-3__x2.jpg 2x
-                  "
-                  alt="Микола Тарасов"
-                  width="450"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/team-member-3__mobile-1x.jpg 1x,
+                      ./images/team-member-3__mobile-2x.jpg 2x
+                    "
+                    media="(min-width: 200px)"
+                    type="image/jpeg"
+                  />
+                  <source
+                    srcset="
+                      ./images/team-member-3__tablet-1x.jpg 1x,
+                      ./images/team-member-3__tablet-2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                    type="image/jpeg"
+                  />
+                  <source
+                    srcset="
+                      ./images/team-member-3__desktop-1x.jpg 1x,
+                      ./images/team-member-3__desktop-2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                    type="image/jpeg"
+                  />
+                  <img
+                    src="./images/team-member-3__mobile-x1.jpg"
+                    alt="Микола Тарасов"
+                  />
+                </picture>
                 <div class="team-card__descr">
                   <h3 class="team-card__name">Микола Тарасов</h3>
                   <p class="team-card__job">Marketing</p>
@@ -496,15 +584,36 @@
 
             <li class="team-list__item">
               <div class="team-card">
-                <img
-                  src="./images/team-member-4__x1.jpg"
-                  srcset="
-                    ./images/team-member-4__x1.jpg 1x,
-                    ./images/team-member-4__x2.jpg 2x
-                  "
-                  alt="Михайло Єрмаков"
-                  width="450"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/team-member-4__mobile-1x.jpg 1x,
+                      ./images/team-member-4__mobile-2x.jpg 2x
+                    "
+                    media="(min-width: 200px)"
+                    type="image/jpeg"
+                  />
+                  <source
+                    srcset="
+                      ./images/team-member-4__tablet-1x.jpg 1x,
+                      ./images/team-member-4__tablet-2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                    type="image/jpeg"
+                  />
+                  <source
+                    srcset="
+                      ./images/team-member-4__desktop-1x.jpg 1x,
+                      ./images/team-member-4__desktop-2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                    type="image/jpeg"
+                  />
+                  <img
+                    src="./images/team-member-4__mobile-x1.jpg"
+                    alt="Михайло Єрмаков"
+                  />
+                </picture>
                 <div class="team-card__descr">
                   <h3 class="team-card__name">Михайло Єрмаков</h3>
                   <p class="team-card__job">UI Designer</p>
