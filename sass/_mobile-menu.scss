@@ -35,7 +35,7 @@
 // container
 
 body {
-  .mobile-menu__container.is-open body {
+  .mobile-menu__container.is-open {
     overflow: hidden;
   }
 }
