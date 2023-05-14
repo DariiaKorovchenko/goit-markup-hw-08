@@ -34,10 +34,8 @@
 
 // container
 
-body {
-  .mobile-menu__container.is-open {
-    overflow: hidden;
-  }
+.mobile-menu__container.is-open body {
+  position: fixed;
 }
 
 .mobile-menu__container {
@@ -48,12 +46,17 @@ body {
   position: absolute;
   top: calc(100% - 60px);
   right: 0;
-  padding: 48px 40px;
   z-index: 4;
 
   &.is-open {
     display: block;
-    overflow: hidden;
+
+    .fixed-container {
+      position: fixed;
+      width: 100%;
+      padding: 48px 40px;
+      background-color: $alternative-color;
+    }
   }
 
   @media (min-width: 768px) {
