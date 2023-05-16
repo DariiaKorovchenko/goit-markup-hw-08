@@ -67,15 +67,20 @@
 
 .portfolio-card__image {
   position: relative;
-  overflow: scroll;
+  overflow-y: scroll;
+
+  @media (min-width: 768px) {
+    overflow: hidden;
+  }
 }
 
 .portfolio-card__overlay {
   max-width: 450px;
+  height: 100%;
   position: absolute;
   top: 0;
   left: 0;
-  padding: 77px 24px;
+  padding: 0 24px;
 
   background-color: rgba(33, 150, 243, 0.9);
   transform: translateY(100%);
@@ -88,12 +93,8 @@
     transform: translateY(0);
   }
 
-  @media (min-width: 768px) {
-    padding: 49px 24px;
-  }
-
   @media (min-width: 1200px) {
-    padding: 63px 24px;
+    padding: 60px 24px;
   }
 }
 
@@ -107,7 +108,18 @@
   line-height: 1.55;
   letter-spacing: 0.03em;
   color: $alternative-color;
-  overflow-y: scroll;
+
+  @media (max-width: 300px) {
+    font-size: 10px;
+  }
+
+  @media (min-width: 301px) {
+    font-size: 12px;
+  }
+
+  @media (min-width: 350px) {
+    font-size: 18px;
+  }
 }
 
 .portfolio-card__main {

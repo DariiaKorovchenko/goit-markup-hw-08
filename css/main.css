@@ -540,13 +540,14 @@ img {
 
 .hero {
   max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 118px;
   padding-bottom: 118px;
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-mobile-1x.jpg);
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-mobile-1x.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
   background-color: #2f303a;
   text-align: center;
 }
@@ -1675,15 +1676,21 @@ body.modal-open {
 
 .portfolio-card__image {
   position: relative;
-  overflow: scroll;
+  overflow-y: scroll;
+}
+@media (min-width: 768px) {
+  .portfolio-card__image {
+    overflow: hidden;
+  }
 }
 
 .portfolio-card__overlay {
   max-width: 450px;
+  height: 100%;
   position: absolute;
   top: 0;
   left: 0;
-  padding: 77px 24px;
+  padding: 0 24px;
   background-color: rgba(33, 150, 243, 0.9);
   -webkit-transform: translateY(100%);
           transform: translateY(100%);
@@ -1700,14 +1707,9 @@ body.modal-open {
   -webkit-transform: translateY(0);
           transform: translateY(0);
 }
-@media (min-width: 768px) {
-  .portfolio-card__overlay {
-    padding: 49px 24px;
-  }
-}
 @media (min-width: 1200px) {
   .portfolio-card__overlay {
-    padding: 63px 24px;
+    padding: 60px 24px;
   }
 }
 
@@ -1721,7 +1723,21 @@ body.modal-open {
   line-height: 1.55;
   letter-spacing: 0.03em;
   color: #ffffff;
-  overflow-y: scroll;
+}
+@media (max-width: 300px) {
+  .portfolio_card__text {
+    font-size: 10px;
+  }
+}
+@media (min-width: 301px) {
+  .portfolio_card__text {
+    font-size: 12px;
+  }
+}
+@media (min-width: 350px) {
+  .portfolio_card__text {
+    font-size: 18px;
+  }
 }
 
 .portfolio-card__main {
